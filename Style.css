@@ -8,14 +8,44 @@
 
 /* 1. */
 /* Home Section */
-
+.hero {
+    height: 100vh;
+}
 
 
 
 
 /* Home Section end */
 
+/*counter*/
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 100vw;
+    background-image: url(./images/counter.png);
+    opacity: 90%;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
 
+.card {
+    background: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 5vw;
+    text-align: center;
+    width: 25vw;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/*counters end */
 
 
 
