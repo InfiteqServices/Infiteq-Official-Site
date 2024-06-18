@@ -287,6 +287,33 @@ nav ul li a:focus {
 
 /* left content end */
 
+/*counter*/
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 100%; /* Remember to change in % */
+    background-image: linear-gradient(rgba(15, 25, 53, 0.5), rgba(18, 34, 63, 0.322)),  url(./images/counter.png); /* Adding lineaar gredient*/
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 25vw;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/*counters end */
 
 
 
@@ -303,6 +330,88 @@ nav ul li a:focus {
 /* Services section */
 
 
+#services{
+    /* padding: 50px 40px; */
+    height: 70vh;
+    width: 100%;
+    padding-top: 30px;
+    background-color: #011a41 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#services>h1{
+    font-size: 2vmax;
+    text-align: center;
+    color: #6EE8FC;
+    font-weight: 2px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+
+}
+#services p{
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 3px;
+    margin: 10px;
+    padding-bottom: 15px;
+    font-size: 1.3vmax;
+}
+#mid{
+    
+    height: 40vh;
+    width: 90vw;
+    margin: 70px;
+    padding: 10px;
+    background-color:#616b9421 ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px 30px 0px 0px;
+    margin-top: 8px;
+}
+#mid H1{
+    font-size: 1.5vmax;
+    color:#6EE8FC;
+    text-align: center;
+    margin-top: 20px;
+}
+#mid p{
+    text-align: center;
+    color:#ffffffe4 ;
+    font-size: 1.3vmax;
+}
+
+.pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(-90deg, #2A77F7, #1243AA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic >img{
+    height: 80px;   
+    justify-content: center;
+    background-color:#FFFFFF 10%;
+    fill: #FFFFFF;
+}
+.item{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
 
 
 
@@ -317,6 +426,106 @@ nav ul li a:focus {
 /* 3. */
 
 /* Why Should you Chose Section */
+
+
+#about{
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100%; /* Changing vw in % */
+    background-color: #011a41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_box{
+    height: 80%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #616b9421;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+}
+.parts{
+    margin: 50px 0px;
+    width: 50%;
+    height: 100%;
+    /* background-color: #6EE8FC ; */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#image{
+    height: auto;
+    width: 500px;
+    border-radius: 50px 50px 50px 0px;
+    overflow: hidden;
+    background-color: #d9d9d966;
+}
+#image > img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.count{
+    height: 50px;
+    width:50px ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-90deg, #2A77F7, #1243AA);
+    padding: 10px;
+    box-sizing: border-box;
+    color:#fff ;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+}
+
+#heading{
+    height: 25%;
+    width: 100%;
+    font-size: 2.5vmax;
+    display: flex;
+    align-items: center;
+    justify-self: left;
+    color: #6EE8FC;
+    padding-bottom: 20px;
+}
+
+.content > div > h3 {
+    font-size: 1.5vmax;
+    color: #D4088C;
+   
+}
+
+.content > div > p{
+    padding: 10px;
+    color: #fff;
+    font-size: 1.3vmax;
+    margin-bottom: 10px;
+}
 
 
 
@@ -335,7 +544,84 @@ nav ul li a:focus {
 
 /* Client Sys Section */
 
+.client-says{
+    width: 100%; 
+    
+    display: flex;
+    justify-content: center;
+}
+.card-container {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding:2%;
+}
+.heading-clinet {
+    text-align: center;
+    padding:3%;
+}
+.heading-clinet h1 {
+    font-size: 42px;
+    color:aqua;
+}
+.card-client {
+    background-color: rgb(40, 55, 119);
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.card-client img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.card-client .description {
+    font-size: 14px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.card-client .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.card-client .post {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.card-client .stars {
+    color: #f1c40f;
+    font-size: 18px;
+}
+/* Add some hover effects */
+.card-client:hover {
+    transform: translateY(-10px);
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    .heading-clinet {
+        text-align: center;
 
+    }
+    .heading-clinet h1{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+}
 
 
 
@@ -349,7 +635,83 @@ nav ul li a:focus {
 
 /* Blog Section */
 
+.blog {
+    width: 100%;  /* Changing vw In % */
+    height: auto;
+     margin-top: -50px; /* Adding margin top to removing gap of two sections */
+   }
 
+   
+   .card-container-blog {
+       width: 90vw;
+       display: flex;
+       justify-items: center;
+       justify-content: space-around;
+       margin-left: 5%;
+   }
+   .heading-blog {
+       text-align: center;
+       margin:3%;
+       
+   }
+   .heading-blog h1 {
+       font-size: 38px;
+       color:aqua;
+       
+   }
+   .card-blog {
+       background-image: url(./images/v173_2731.png);
+       background-size: cover;
+       color: aliceblue;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       width:400px;
+       height: 300px;
+       text-align: center;
+       transition: transform 0.2s;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       margin-bottom: 20px;
+   }
+   
+   .card-blog .description-blog {
+       margin-top: 15%;
+       font-size: 28px;
+       color: aliceblue;
+   }
+   .card-client .name {
+       font-size: 18px;
+       font-weight: bold;
+       margin-bottom: 5px;
+   }
+   /* Add some hover effects */
+   .card-client:hover {
+       transform: translateY(-10px);
+   }
+   /* Responsive styles */
+   @media (max-width: 768px) {
+       .card-container-blog {
+           flex-direction: column;
+           align-items: center;
+           width: 100vw;
+           margin-left: 0%;
+       }
+       .card-blog {
+           width: 80vw;
+           height: 250px;
+           margin-bottom: 20px;
+       }
+       .heading-blog {
+           text-align: center;
+           margin:3%;
+       }
+       .heading-blog h1{
+           font-size: 28px;
+           margin-bottom: 20px;
+       }
+   }
+   
 
 
 /* Blog Section end */
