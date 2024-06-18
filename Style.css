@@ -858,6 +858,23 @@ nav ul li a:focus {
 
 
     /* left content heading end */
+
+
+    /* about section  */
+#about{
+    height: auto;
+}
+#about_box{
+    flex-direction: column;
+    margin: 0;
+}
+.parts{
+    margin: 0;
+    width: 100%;
+    padding: 50px 100px;
+}
+
+
 }
 
 
@@ -950,5 +967,81 @@ nav ul li a:focus {
 
 
     /* left content heding end */
+
+
+    #services{
+        height: auto;
+    }
+    #services>h1{
+        font-size: 3.5vmax;
+    }
+    #services>p{
+        font-size: 2vmax;
+    }
+    #mid{
+        height: auto;
+        flex-direction: column;
+    }
+    #mid H1{
+        font-size: 2.5vmax;
+    }
+    #mid p{
+        font-size: 2vmax;
+    }
+    .item{
+        width: 90%;
+    }
+    .pic{
+        height: 100px;
+        width: 100px;
+    }
+    .pic>img{
+        height: 50px;
+    }
+
+
+    /* about section  */
+#about{
+    height: auto;
+    padding: 5vh 0;
+}
+#about_box{
+    flex-direction: column;
+    margin: 0;
+}
+.parts{
+    margin: 0;
+    width: 100%;
+}
+#image{
+    width: 300px;
+}
+
+.parts{
+    padding: 20px;
+}
+.count{
+    height: 40px;
+    width: 40px;
+    font-size: 13px;
+}
+
+    
+
+#heading {
+    font-size: 3.9vmax;
+}
+
+.content > div > h3{
+    font-size: 3vmax;
+   
+}
+
+.content > div > p{
+    font-size: 2vmax;
+    line-height: 1.2rem;
+}
+
+
 
 }
