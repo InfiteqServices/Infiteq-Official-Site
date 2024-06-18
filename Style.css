@@ -93,11 +93,98 @@
 /* 7. */
 
 /* Footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+html, body {
+    overflow-x: hidden; /* Hide horizontal scrollbar globally */
+}
+.footer {
+    background-color: #15141B;
+    padding: 70px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box h3 {
+    font-size: 1.075rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #C4E4E9;
+    transition: color 0.4s;
+}
+
+.footer-box h3:hover {
+    color: #f1f1f1;
+}
+
+.footer-box p {
+    font-size: 0.948rem;
+    color: #f1f1f1;
+    margin-bottom: 1rem;
+}
+
+.footer-box a {
+    font-size: 16px;
+    margin-bottom: 0.7rem;
+    text-decoration: none;
+    font-weight: 300;
+    color: #f1f1f1;
+    transition: color 0.4s, padding-left 0.4s;
+    margin-left: 30px;
+    
+}
+
+.footer-box a:hover {
+    color: #f1f1f1;
+    padding-left: 8px;
+}
+
+.infiteq-img {
+    width: 100px;
+    mix-blend-mode: color-dodge;
+    
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+    gap: 10px;
+    margin-top: 30px;
+    
+}
 
 
 /* Footer end */
-
-
+.copyright {
+    text-align: center;
+    background-color: #202140;
+    padding: 30px 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
 
 
 
@@ -108,11 +195,56 @@
 
 /* Responsive for tablets */
 @media (max-width: 1200px) {
+    * {
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    }
 
+    .footer-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        overflow-x: hidden;
+    }
 
+    html, body {
+        overflow-x: hidden; /* Hide horizontal scrollbar globally */
+        padding: 0;
+    }
 
+    .footer-box {
+        width: 100%;
+    }
 
+    .footer-box p {
+        margin-bottom: 1rem;
+        font-size: 0.948rem;
+        text-align: left;
+        overflow-x: hidden; /* Ensure no horizontal overflow */
+    }
+
+    .footer-box a:hover {
+        color: #f1f1f1;
+        padding-left: 8px;
+    }
+
+    .footer-box h3:hover {
+        color: #f1f1f1;
+    }
+
+    .icon {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        color: #f1f1f1;
+        width: 100%; /* Ensure the width doesn't cause overflow */
+        font-size: 20px;
+        gap: 10px;
+        margin-top: 30px;
+        overflow-x: hidden; /* Ensure no horizontal overflow */
+    }    
 }
+
 
 
 
@@ -123,8 +255,35 @@
 
 /* Responsve for mobail */
 @media (max-width: 700px){
-
-
-
-
+    .footer-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        overflow-x: hidden;
+      }
+      html, body {
+        overflow-x: hidden; /* Hide horizontal scrollbar globally */
+    }
+      .footer-box p{
+        margin-bottom: 1rem;
+        font-size: 0.948rem;
+        text-align: left;;
+        overflow-x: hidden;
+    }
+    .footer-box a:hover {
+        color: #f1f1f1;
+        padding-left: 8px;
+    }
+    .footer-box h3:hover{
+        color: #f1f1f1;
+    }
+    .icon {
+        position: relative;
+        color: #f1f1f1;
+        width: 100%;
+        font-size: 20px;
+        margin-top: 30px;
+        overflow-x: hidden;
+    }
 }
