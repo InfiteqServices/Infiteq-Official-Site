@@ -1028,6 +1028,20 @@ nav ul li a:focus {
 
     
 
+#heading {
+    font-size: 3.9vmax;
+}
+
+.content > div > h3{
+    font-size: 3vmax;
+   
+}
+
+.content > div > p{
+    font-size: 2vmax;
+    line-height: 1.2rem;
+}
+
 
 
 }
