@@ -96,7 +96,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .container {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     width: 100%;
     margin: auto;
     display: flex;
@@ -168,7 +168,7 @@ html, body {
     flex-direction: column;
     color: #f1f1f1;
     position: absolute;
-    width: 100%;
+    width: 225;
     font-size: 20px;
     gap: 10px;
     margin-top: 30px;
@@ -200,16 +200,15 @@ html, body {
     }
 
     .footer-container {
-        width: 100%;
+        width: 700px;
         display: flex;
         flex-direction: column;
-        padding-left: 10px;
-        overflow-x: hidden;
+        margin-left: 20px;
     }
 
     html, body {
         overflow-x: hidden; /* Hide horizontal scrollbar globally */
-        padding: 0;
+        max-width: 100%;
     }
 
     .footer-box {
@@ -234,15 +233,17 @@ html, body {
 
     .icon {
         display: flex;
-        position: relative;
+        flex-wrap: wrap;
+        position: absolute;
         flex-direction: column;
         color: #f1f1f1;
-        width: 100%; /* Ensure the width doesn't cause overflow */
+        width: 700px; /* Ensure the width doesn't cause overflow */
         font-size: 20px;
         gap: 10px;
         margin-top: 30px;
         overflow-x: hidden; /* Ensure no horizontal overflow */
-    }    
+    }  
+    
 }
 
 
@@ -257,13 +258,15 @@ html, body {
 @media (max-width: 700px){
     .footer-container{
         width: 100%;
+        margin: auto;
         display: flex;
         flex-direction: column;
         padding-left: 20px;
-        overflow-x: hidden;
+        padding-bottom: 20px;
       }
       html, body {
         overflow-x: hidden; /* Hide horizontal scrollbar globally */
+        max-width: 100%;
     }
       .footer-box p{
         margin-bottom: 1rem;
@@ -279,9 +282,9 @@ html, body {
         color: #f1f1f1;
     }
     .icon {
-        position: relative;
+        position: absolute;
         color: #f1f1f1;
-        width: 100%;
+        width: 600px;
         font-size: 20px;
         margin-top: 30px;
         overflow-x: hidden;
