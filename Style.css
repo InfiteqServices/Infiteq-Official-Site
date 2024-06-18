@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +15,7 @@
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9),
-     rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(images/hero-banner.png);
+            rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(images/hero-banner.png);
     background-size: cover;
     background-position: center;
 
@@ -43,7 +43,7 @@ nav {
 }
 
 nav.scrolled {
-    background: #383838de; 
+    background: #383838de;
 }
 
 nav.black {
@@ -109,7 +109,8 @@ nav ul li a:hover {
 
 
 nav.scrolled ul li a {
-    color: #fff; /* Dark text when scrolled */
+    color: #fff;
+    /* Dark text when scrolled */
 }
 
 
@@ -132,7 +133,7 @@ nav ul li a:focus {
     transform: translateY(-50%);
     right: 20px;
     display: none;
-    
+
 
 }
 
@@ -144,7 +145,7 @@ nav ul li a:focus {
 
 /* contact btn */
 
- /* #menuList li:last-child {
+/* #menuList li:last-child {
     background-color: deeppink;
     border-radius: 40px;
     padding: 10px 20px; 
@@ -154,7 +155,8 @@ nav ul li a:focus {
 #menuList li:last-child a {
     background-color: deeppink;
     border-radius: 40px;
-    padding: 10px 20px; /* Adjust padding as needed */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
 }
 
 /* contact btn end */
@@ -204,9 +206,9 @@ nav ul li a:focus {
 }
 
 .heading h1 span.stop-blinking::before {
- 
+
     animation: none;
-    
+
 }
 
 
@@ -221,7 +223,7 @@ nav ul li a:focus {
 
 
 
-.heading p{
+.heading p {
     font-family: "Poppins", sans-serif;
     color: rgb(172, 166, 166);
     font-size: 1.3vw;
@@ -234,50 +236,60 @@ nav ul li a:focus {
     display: flex;
     /* justify-content: center; */
     margin-top: 20px;
-    margin-left: 20px; 
+    margin-left: 20px;
     gap: 20px;
 }
 
 
 .buttons button {
-    padding: 15px 30px; /* Increase the size of the button */
-    font-size: 18px; /* Increase font size */
-    color: white; /* Text color */
-    border: none; /* Remove default border */
-    border-radius: 40px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    padding: 15px 30px;
+    /* Increase the size of the button */
+    font-size: 18px;
+    /* Increase font size */
+    color: white;
+    /* Text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 40px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
 }
 
 
 /* btn-1 */
 
 .btn-1 button {
-    padding: 15px 30px; 
+    padding: 15px 30px;
     font-size: 20px;
-    background-color: deeppink; 
-    color: white; 
-    border: none; 
-    border-radius: 40px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
+    background-color: deeppink;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 /* Hover effect for the button */
 .btn-1 button:hover {
-    background-color: rgb(243, 123, 187); 
+    background-color: rgb(243, 123, 187);
 }
 
 /* btn-2 */
 
 .btn-2 button {
-    background-color: transparent; /* Transparent background */
-    border: 2px solid #8d8c8cc0; /* Border for the button */
+    background-color: transparent;
+    /* Transparent background */
+    border: 2px solid #8d8c8cc0;
+    /* Border for the button */
     color: grey;
 }
 
 .btn-2 button:hover {
-    background-color: white; /* Pink background on hover */
+    background-color: white;
+    /* Pink background on hover */
 }
 
 
@@ -292,9 +304,11 @@ nav ul li a:focus {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 200px;
-    width: 100%; /* Remember to change in % */
-    background-image: linear-gradient(rgba(15, 25, 53, 0.5), rgba(18, 34, 63, 0.322)),  url(./images/counter.png); /* Adding lineaar gredient*/
+    height: 250px;
+    width: 100%;
+    /* Remember to change in % */
+    background-image: linear-gradient(rgba(15, 25, 53, 0.5), rgba(18, 34, 63, 0.322)), url(./images/counter.png);
+    /* Adding lineaar gredient*/
     opacity: 1;
     background-size: cover;
     background-position: center;
@@ -330,12 +344,12 @@ nav ul li a:focus {
 /* Services section */
 
 
-#services{
+#services {
     /* padding: 50px 40px; */
     height: 70vh;
     width: 100%;
     padding-top: 30px;
-    background-color: #011a41 ;
+    background-color: #011a41;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -343,7 +357,7 @@ nav ul li a:focus {
     font-family: sans-serif;
 }
 
-#services>h1{
+#services>h1 {
     font-size: 2vmax;
     text-align: center;
     color: #6EE8FC;
@@ -352,7 +366,8 @@ nav ul li a:focus {
     margin-top: 50px;
 
 }
-#services p{
+
+#services p {
     color: #FFFFFF;
     text-align: center;
     font-weight: 3px;
@@ -360,32 +375,35 @@ nav ul li a:focus {
     padding-bottom: 15px;
     font-size: 1.3vmax;
 }
-#mid{
-    
+
+#mid {
+
     height: 40vh;
     width: 90vw;
     margin: 70px;
     padding: 10px;
-    background-color:#616b9421 ;
+    background-color: #616b9421;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 30px 30px 0px 0px;
     margin-top: 8px;
 }
-#mid H1{
+
+#mid H1 {
     font-size: 1.5vmax;
-    color:#6EE8FC;
+    color: #6EE8FC;
     text-align: center;
     margin-top: 20px;
 }
-#mid p{
+
+#mid p {
     text-align: center;
-    color:#ffffffe4 ;
+    color: #ffffffe4;
     font-size: 1.3vmax;
 }
 
-.pic{
+.pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -395,13 +413,14 @@ nav ul li a:focus {
     align-items: center;
 }
 
-.pic >img{
-    height: 80px;   
+.pic>img {
+    height: 80px;
     justify-content: center;
-    background-color:#FFFFFF 10%;
+    background-color: #FFFFFF 10%;
     fill: #FFFFFF;
 }
-.item{
+
+.item {
     width: 25%;
     height: 100%;
     display: flex;
@@ -409,7 +428,7 @@ nav ul li a:focus {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    
+
 }
 
 
@@ -428,17 +447,18 @@ nav ul li a:focus {
 /* Why Should you Chose Section */
 
 
-#about{
+#about {
     font-family: sans-serif;
     height: 100vh;
-    width: 100%; /* Changing vw in % */
+    width: 100%;
+    /* Changing vw in % */
     background-color: #011a41;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#about_box{
+#about_box {
     height: 80%;
     width: 100%;
     border-radius: 50px;
@@ -449,7 +469,8 @@ nav ul li a:focus {
     overflow: hidden;
 
 }
-.parts{
+
+.parts {
     margin: 50px 0px;
     width: 50%;
     height: 100%;
@@ -459,23 +480,24 @@ nav ul li a:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-#image{
+#image {
     height: auto;
     width: 500px;
     border-radius: 50px 50px 50px 0px;
     overflow: hidden;
     background-color: #d9d9d966;
 }
-#image > img{
+
+#image>img {
     height: auto;
     width: 100%;
     object-fit: cover;
 }
 
-.content{
+.content {
     height: 25%;
     width: 100%;
     display: flex;
@@ -487,9 +509,9 @@ nav ul li a:focus {
 }
 
 
-.count{
+.count {
     height: 50px;
-    width:50px ;
+    width: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -497,13 +519,13 @@ nav ul li a:focus {
     background: linear-gradient(-90deg, #2A77F7, #1243AA);
     padding: 10px;
     box-sizing: border-box;
-    color:#fff ;
+    color: #fff;
     padding: 20px;
     margin-right: 20px;
     margin-bottom: 70px;
 }
 
-#heading{
+#heading {
     height: 25%;
     width: 100%;
     font-size: 2.5vmax;
@@ -514,13 +536,13 @@ nav ul li a:focus {
     padding-bottom: 20px;
 }
 
-.content > div > h3 {
+.content>div>h3 {
     font-size: 1.5vmax;
     color: #D4088C;
-   
+
 }
 
-.content > div > p{
+.content>div>p {
     padding: 10px;
     color: #fff;
     font-size: 1.3vmax;
@@ -544,12 +566,13 @@ nav ul li a:focus {
 
 /* Client Sys Section */
 
-.client-says{
-    width: 100%; 
-    
+.client-says {
+    width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 5px;
 }
+
 .card-container {
     width: 70vw;
     display: flex;
@@ -558,14 +581,17 @@ nav ul li a:focus {
     gap: 20px;
     padding:2%;
 }
+
 .heading-clinet {
     text-align: center;
-    padding:3%;
+    padding: 3%;
 }
+
 .heading-clinet h1 {
     font-size: 42px;
-    color:aqua;
+    color: aqua;
 }
+
 .card-client {
     background-color: rgb(40, 55, 119);
     color: aliceblue;
@@ -576,6 +602,7 @@ nav ul li a:focus {
     text-align: center;
     transition: transform 0.2s;
 }
+
 .card-client img {
     width: 100px;
     height: 100px;
@@ -583,29 +610,35 @@ nav ul li a:focus {
     object-fit: cover;
     margin-bottom: 20px;
 }
+
 .card-client .description {
     font-size: 14px;
     color: aliceblue;
     margin-bottom: 20px;
 }
+
 .card-client .name {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 .card-client .post {
     font-size: 14px;
     color: #888;
     margin-bottom: 10px;
 }
+
 .card-client .stars {
     color: #f1c40f;
     font-size: 18px;
 }
+
 /* Add some hover effects */
 .card-client:hover {
     transform: translateY(-10px);
 }
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .card-container {
@@ -613,11 +646,13 @@ nav ul li a:focus {
         align-items: center;
         width: 100vw;
     }
+
     .heading-clinet {
         text-align: center;
 
     }
-    .heading-clinet h1{
+
+    .heading-clinet h1 {
         font-size: 36px;
         margin-bottom: 20px;
     }
@@ -636,82 +671,94 @@ nav ul li a:focus {
 /* Blog Section */
 
 .blog {
-    width: 100%;  /* Changing vw In % */
+    width: 100%;
+    margin-top: -53px;
     height: auto;
-     margin-top: -50px; /* Adding margin top to removing gap of two sections */
-   }
+}
 
-   
-   .card-container-blog {
-       width: 90vw;
-       display: flex;
-       justify-items: center;
-       justify-content: space-around;
-       margin-left: 5%;
-   }
-   .heading-blog {
-       text-align: center;
-       margin:3%;
-       
-   }
-   .heading-blog h1 {
-       font-size: 38px;
-       color:aqua;
-       
-   }
-   .card-blog {
-       background-image: url(./images/v173_2731.png);
-       background-size: cover;
-       color: aliceblue;
-       border-radius: 10px;
-       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-       width:400px;
-       height: 300px;
-       text-align: center;
-       transition: transform 0.2s;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       margin-bottom: 20px;
-   }
-   
-   .card-blog .description-blog {
-       margin-top: 15%;
-       font-size: 28px;
-       color: aliceblue;
-   }
-   .card-client .name {
-       font-size: 18px;
-       font-weight: bold;
-       margin-bottom: 5px;
-   }
-   /* Add some hover effects */
-   .card-client:hover {
-       transform: translateY(-10px);
-   }
-   /* Responsive styles */
-   @media (max-width: 768px) {
-       .card-container-blog {
-           flex-direction: column;
-           align-items: center;
-           width: 100vw;
-           margin-left: 0%;
-       }
-       .card-blog {
-           width: 80vw;
-           height: 250px;
-           margin-bottom: 20px;
-       }
-       .heading-blog {
-           text-align: center;
-           margin:3%;
-       }
-       .heading-blog h1{
-           font-size: 28px;
-           margin-bottom: 20px;
-       }
-   }
-   
+
+.card-container-blog {
+    width: 90vw;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+
+.heading-blog {
+    text-align: center;
+    margin: 3%;
+
+}
+
+.heading-blog h1 {
+    font-size: 38px;
+    color: aqua;
+
+}
+
+.card-blog {
+    background-image: url(./images/v173_2731.png);
+    background-size: cover;
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card-blog .description-blog {
+    margin-top: 15%;
+    font-size: 28px;
+    color: aliceblue;
+}
+
+.card-client .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Add some hover effects */
+.card-client:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .blog {
+        margin-top: -13px;
+    }
+    .card-container-blog {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        margin-left: 0%;
+    }
+
+    .card-blog {
+        width: 80vw;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .heading-blog {
+        text-align: center;
+        margin: 3%;
+    }
+
+    .heading-blog h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
+
 
 
 /* Blog Section end */
@@ -751,14 +798,15 @@ nav ul li a:focus {
 
     /* Navbar section */
 
-    
+
     nav {
-        padding: 10px 50px; /* Adjust padding for smaller screens */
+        padding: 10px 50px;
+        /* Adjust padding for smaller screens */
     }
 
     nav .logo {
         margin-left: -30px;
-        
+
     }
 
     nav ul {
@@ -791,8 +839,8 @@ nav ul li a:focus {
 
     nav.black {
         height: 90px;
-        
-       
+
+
 
     }
 
@@ -839,7 +887,7 @@ nav ul li a:focus {
 
     /* left content heding */
 
-    
+
     /* left content heding */
 
     .heading h1 {
@@ -849,7 +897,7 @@ nav ul li a:focus {
     }
 
 
-    .heading p{
+    .heading p {
         font-family: "Poppins", sans-serif;
         color: rgba(201, 198, 198, 0.822);
         font-size: 2vw;
@@ -868,19 +916,19 @@ nav ul li a:focus {
 
 
 /* Responsve for mobail */
-@media (max-width: 700px){
+@media (max-width: 700px) {
 
 
     /* navbar section */
 
     nav ul li {
         padding: 0;
-        
+
         margin-top: 80px;
     }
 
-   
-   
+
+
 
     nav ul li a {
         line-height: 5vw;
@@ -889,7 +937,7 @@ nav ul li a:focus {
 
     }
 
-    nav.black{
+    nav.black {
         height: 120px;
     }
 
@@ -897,10 +945,10 @@ nav ul li a:focus {
         transition: all 0.5s;
         margin-top: -80px;
         height: 700px;
-        
+
     }
 
-   
+
     /* contact btn */
 
     #menuList li:last-child a {
@@ -925,7 +973,7 @@ nav ul li a:focus {
     }
 
 
-    .heading p{
+    .heading p {
         font-family: "Poppins", sans-serif;
         color: rgba(201, 198, 198, 0.822);
         font-size: 4.5vw;
@@ -934,16 +982,17 @@ nav ul li a:focus {
 
     /* btn */
 
-    .buttons button{
+    .buttons button {
         font-size: 15px;
     }
 
-    .btn-1 button{
+    .btn-1 button {
         font-size: 12px;
     }
 
-    .btn-2 button{
-        border: 2px solid #f1efefcb; /* Border for the button */
+    .btn-2 button {
+        border: 2px solid #f1efefcb;
+        /* Border for the button */
         color: #f1efefcb;
     }
 
