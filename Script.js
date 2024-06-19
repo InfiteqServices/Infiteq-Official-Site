@@ -14,22 +14,12 @@ window.addEventListener('scroll', function() {
 
 // navbar responsiveness
 
-let menuList = document.getElementById("menuList");
-let menuIcon = document.getElementById("menuIcon");
-
-menuList.style.maxHeight = "0px";
-
-function toggleMenu() {
-    if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "1400px";
-        menuIcon.children[0].style.display = "none"; // Hide menu icon
-        menuIcon.children[1].style.display = "block"; // Show cross icon
-    } else {
-        menuList.style.maxHeight = "0px";
-        menuIcon.children[0].style.display = "block"; // Show menu icon
-        menuIcon.children[1].style.display = "none"; // Hide cross icon
-    }
+// overlay menu
+function openNav() {
+    document.getElementById("myNav").classList.toggle("menu_width");
+    document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
 }
+
 
 
 // Close menu when a link is clicked

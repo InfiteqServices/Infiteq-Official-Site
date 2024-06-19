@@ -126,22 +126,10 @@ nav ul li a:focus {
 }
 
 
-
-.menu-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px;
+.Animated-Nav {
     display: none;
-
-
 }
 
-.menu-icon i {
-    font-size: 40px;
-    display: none;
-
-}
 
 /* contact btn */
 
@@ -1006,73 +994,185 @@ nav ul li a:focus {
     /* Navbar section */
 
 
-    nav {
-        padding: 10px 50px;
-        /* Adjust padding for smaller screens */
-    }
-
+   
     nav .logo {
-        margin-left: -30px;
+        margin-left: -75px;
 
     }
 
-    nav ul {
-
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        text-align: center;
-        background: #fff;
-        gap: 0;
-        overflow: hidden;
-
-    }
-
-
-    nav ul li {
-        /* padding: -20px; */
-        margin-top: 80px;
-    }
-
-    nav ul li a {
-        margin-top: 20px;
-        line-height: 1.5vw;
-        font-size: 3.5vw;
-        color: #fff;
-
-    }
-
-    nav.black {
-        height: 90px;
-
-
-
-    }
-
-    nav ul {
-        top: 80px;
-        /* Adjust as needed */
-    }
 
     #menuList {
-        transition: all 0.5s;
-        margin-top: -80px;
-        height: 700px;
-        background-color: #383838;
+        display: none;
     }
 
+    
+    
+    /* Animated NavBar */
 
-    .menu-icon {
-        display: block;
-        color: #f5f0f0;
-    }
-
-    .menu-icon i {
-
+    .Animated-Nav {
         display: block;
     }
+
+    
+.custom_menu-btn {
+    position: fixed;
+    right: 25px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      box-shadow: 0 0 5px 0 rgba( #000000,  .07);
+      z-index: 7;
+      border-radius: 100%;
+      transition: all .3s;
+    }
+  
+    &.menu_btn-style {
+      &::before {
+        width: 100vh;
+        height: 100vh;
+        background-color: #160e0b;
+        transform: scale(5);
+        border-radius: 0;
+      }
+    }
+  }
+  
+  .custom_menu-btn button {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+    z-index: 999;
+    margin: 0;
+  }
+  
+  .custom_menu-btn button span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 2.5px 0;
+    transition: all 0.3s;
+    border-radius: 15px;
+  }
+  
+  
+  .custom_menu-btn .s-2 {
+    transition: all 0.1s;
+  }
+  
+  .menu_btn-style button span {
+    background-color: white;
+  }
+  
+  .menu_btn-style button .s-1 {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  .menu_btn-style button .s-2 {
+    transform: translateX(100px);
+  }
+  
+  .menu_btn-style button .s-3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 9;
+  
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 60px;
+  }
+  
+  .overlay a {
+    padding: 0px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0;
+  
+    &:hover {
+      color: #fd9c6b;
+    }
+  
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 99;
+  }
+  
+  .menu_width {
+    width: 100%;
+  }
+  
+  .menu_width.overlay a {
+    opacity: 1;
+    padding: 2%;
+  }
+  
+  a,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    color: initial;
+  }
+  
+  .btn,
+  .btn:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+  
+
+
+
+
+
+    /* Animated NavBar end */
+
+
 
 
     /* contact btn */
@@ -1213,33 +1313,6 @@ nav ul li a:focus {
 
 
     /* navbar section */
-
-    nav ul li {
-        padding: 0;
-
-        margin-top: 80px;
-    }
-
-
-
-
-    nav ul li a {
-        line-height: 5vw;
-        font-size: 8vw;
-        color: #fff;
-
-    }
-
-    nav.black {
-        height: 120px;
-    }
-
-    #menuList {
-        transition: all 0.5s;
-        margin-top: -80px;
-        height: 700px;
-
-    }
 
 
     /* contact btn */
