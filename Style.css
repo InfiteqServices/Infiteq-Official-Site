@@ -609,6 +609,7 @@ nav ul li a:focus {
     text-align: center;
     transition: transform 0.2s;
     margin: 25px;
+    
 }
 
 .card-client img {
@@ -625,7 +626,7 @@ nav ul li a:focus {
     margin-bottom: 20px;
 }
 
-.card-client .name {
+.card-client .client-name {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -813,11 +814,13 @@ nav ul li a:focus {
     color: #fff;
 }
 .map-image{
-    max-width: 500px;
+    width: 400px;
+    max-width: 400px;
+    max-height: 250px;
     height: 30%;
     background-color: #ffffff91;
     margin: 30px;
-    border-radius: 40px;
+    border-radius: 30px;
     overflow: hidden;
     object-fit: fill;
 }
@@ -878,10 +881,55 @@ nav ul li a:focus {
 .contact-form button:hover {
     background-color: #6EE8FC;
 }
+
+
 /* contact us end */
+/* end */
 
+.endnote{
+    height: 40vw;
+    width: 100%;
+    background-color: #011a41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-image{
+    height: 25vw;
+    width: 70vw;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity to control the tint intensity */
+    z-index: 50; /* Ensure it is above the image but below the text */
+}
 
+.end-image > img{
+    width: 70vw;
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+}
 
+.end-image > h2{
+    font-size: 3vw;
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 100;
+    
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -1264,19 +1312,104 @@ nav ul li a:focus {
     
 
 #heading {
-    font-size: 3.9vmax;
+    font-size: 3.9vw;
 }
 
 .content > div > h3{
-    font-size: 3vmax;
+    font-size: 3.3vw;
    
 }
 
 .content > div > p{
-    font-size: 2vmax;
+    font-size: 2.5vw;
     line-height: 1.2rem;
+    
 }
 
+/* contact us */
+.map-image{
+    width: 80vw;
+    height: 40vw;
+    border-radius: 20px;
+}
+.grid-item {
+    min-width: auto;
+    max-width: none;
+    width: 35vw;
+}
 
+.grid-item img {
+    width: 9vw;
+}
+.grid-item h3 {
+    font-size: 2.8vw;
+}
+.grid-item p {
+    font-size: 2.3vw;
+}
+.contact{
+    padding-top: 0;
+}
+.name{
+    height: 100px;
+    font-size: 4vw;
+}
+.contact-box{
+    padding: 0;
+}
+.contact-parts{
+    margin: 0;
+    padding: 0;    
+}
+.contact-form-container {
+    max-width: 400px;
+    min-width: auto;
+    width: 80vw;
+    padding: 20px;
+    margin: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #6EE8FC;
+    font-size: 4vw;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 2.5vw;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #a0a0a0bb;
+    border-radius: 5px;
+    font-size: 2.3vw;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #383838;
+    color: #FFFFFF;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #535353;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2.3vw;
+    transition: background-color 0.3s;
+}
 
 }
