@@ -1349,6 +1349,7 @@ nav ul li a:focus {
 }
 .contact{
     padding-top: 0;
+    padding-bottom: 0;
 }
 .name{
     height: 100px;
@@ -1375,41 +1376,29 @@ nav ul li a:focus {
 }
 
 .contact-form h2 {
-    margin-bottom: 20px;
-    text-align: left;
-    color: #6EE8FC;
     font-size: 4vw;
 }
 
 .contact-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #FFFFFF;
     font-size: 2.5vw;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #a0a0a0bb;
-    border-radius: 5px;
     font-size: 2.3vw;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #383838;
-    color: #FFFFFF;
 }
 
 .contact-form button {
-    padding: 10px;
-    background-color: #535353;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     font-size: 2.3vw;
-    transition: background-color 0.3s;
 }
-
+.endnote{
+    height: 60vw;
+}
+.end-image{
+    height: 37vw;
+    width: 85vw;
+}
+.end-image > img{
+    width: 85vw;
+}
 }
