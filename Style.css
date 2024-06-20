@@ -302,12 +302,17 @@ nav ul li a:focus {
     background-position: center;
 }
 
-.card {
+.card-counters  {
     background: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
     text-align: center;
     width: 25vw;
 }
+
+.card-counters h1{
+    color: white;
+}
+
 
 @media (max-width: 768px) {
     .container {
@@ -513,7 +518,7 @@ nav ul li a:focus {
     margin-bottom: 70px;
 }
 
-#heading {
+#heading-why-chose  {
     height: 25%;
     width: 100%;
     font-size: 1.8vmax;
@@ -522,6 +527,10 @@ nav ul li a:focus {
     justify-self: left;
     color: #6EE8FC;
     padding-bottom: 20px;
+}
+
+#heading-why-chose h2 {
+    color: #6EE8FC;
 }
 
 .content>div>h3 {
@@ -775,14 +784,14 @@ nav ul li a:focus {
     padding-top: 100px;
 
 }
-.name{
+.name-contact h2{
     width: 100%;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2vmax;
-    color: #D4088C;
+    font-size: 3vmax;
+    color: aqua;
 }
 
 .contact-box{
@@ -975,6 +984,86 @@ nav ul li a:focus {
 
 /* Footer */
 
+footer{
+    margin-top: -50px;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+.logo-img{
+    height: 10vh;
+    width: 70%;
+    background-image: url(images/Infiteq.svg);
+    background-size: contain; /* Ensure the entire image is visible within the div */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center;
+    margin-left: -60px;
+
+    
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.863), url(../img/footer.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid #FFFFFF;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .copyright a:hover {
+    color: var(--primary);
+}
+
+
+
 
 /* Footer end */
 
@@ -996,6 +1085,7 @@ nav ul li a:focus {
 
    
     nav .logo {
+        
         margin-left: -75px;
 
     }
@@ -1017,7 +1107,7 @@ nav ul li a:focus {
 .custom_menu-btn {
     position: fixed;
     right: 25px;
-    top: 15px;
+    top: 25px;
     width: 50px;
     height: 50px;
   
@@ -1028,7 +1118,7 @@ nav ul li a:focus {
       right: 0;
       width: 100%;
       height: 100%;
-      background-color: white;
+      /* background-color: white; */
       box-shadow: 0 0 5px 0 rgba( #000000,  .07);
       z-index: 7;
       border-radius: 100%;
@@ -1066,7 +1156,7 @@ nav ul li a:focus {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: rgb(245, 240, 240);
     margin: 2.5px 0;
     transition: all 0.3s;
     border-radius: 15px;
@@ -1270,6 +1360,10 @@ nav ul li a:focus {
 
 
 
+/* Footer */
+
+
+
 
 
 }
@@ -1313,6 +1407,11 @@ nav ul li a:focus {
 
 
     /* navbar section */
+
+    nav .logo {
+    
+        height: 30vh;
+    }
 
 
     /* contact btn */
@@ -1518,6 +1617,7 @@ nav ul li a:focus {
 .end-image > img{
     width: 85vw;
 }
+
 
 
 }
