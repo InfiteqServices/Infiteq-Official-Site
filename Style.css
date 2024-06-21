@@ -1438,6 +1438,12 @@ footer{
     }
 
 
+    .heading h1 span::before {
+
+        height: 40px;
+    }
+
+
     .heading p {
         font-family: "Poppins", sans-serif;
         color: rgba(201, 198, 198, 0.822);
