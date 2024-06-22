@@ -1441,6 +1441,11 @@ footer{
 
     /* left content heding */
 
+    .h1-home {
+        height: 250px;
+    }
+
+
     .heading h1 {
         color: #f5f0f0;
         font-size: 11vw;
@@ -1449,6 +1454,7 @@ footer{
 
 
     .heading h1 span::before {
+        display: none;
 
         height: 40px;
     }
@@ -1458,7 +1464,10 @@ footer{
         font-family: "Poppins", sans-serif;
         color: rgba(201, 198, 198, 0.822);
         font-size: 4.5vw;
+       
     }
+
+   
 
 
     /* btn */
