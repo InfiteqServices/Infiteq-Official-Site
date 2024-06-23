@@ -22,7 +22,17 @@
 
 
 
+    <!-- Email sending Script -->
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "GcVAb99m8d1RhWtRZ",
+            });
+        })();
+    </script>
 
 
 </head>
@@ -85,6 +95,8 @@
                     comprehensive <span></span>
                  </h1>
                 </div>
+
+                
                 
                 <div class="home-p">
                  <p>Expert advice to navigate complex IT challenges and grow your business</p>
@@ -92,7 +104,7 @@
                 
                  <div class="buttons">
                     <div class="btn-1">
-                        <a href="./contact.html"><button>Get Started Now</button></a>
+                        <a href="https://wa.me/919579181793?text=Hello%20!%20I%20want%20to%20know%20more%20about%20our%20Servives." target="_blank"><button>Get Started Now</button></a>
                     </div>
                     <div class="btn-2">
                         <a href="./projects.html"><button>Portfolio</button></a>
@@ -221,8 +233,7 @@
         <div class="card-container">
             <div class="heading-clinet">
                 <h1>What our clients say</h1>
-                <p style="color: aliceblue;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis,
-                    suscipit eligendi officia autem porroesse!</p>
+                <p style="color: aliceblue;">Here from our satisfied clients about their experiences with our services.</p>
             </div>
             <div class="cards">
                 <div class="card-client">
@@ -238,7 +249,7 @@
                     </div>
                 </div>
                 <div class="card-client">
-                    <img src="images/Testnomine-2.png" alt="Profile Image">
+                    <img src="images/Testnomine-2.jpeg" alt="Profile Image">
                     <div class="description">
                         "Working with Infiteq was a pleasure. 
                         They created a stunning marketing website that has boosted our online presence tremendously."
@@ -250,7 +261,7 @@
                     </div>
                 </div>
                 <div class="card-client">
-                    <img src="https://via.placeholder.com/100" alt="Profile Image">
+                    <img src="images/Testnomine-3.jpg" alt="Profile Image">
                     <div class="description">
                         "Infiteq understands the unique needs of startups. 
                         Their tailored solutions have been instrumental in our growth and success."
@@ -275,31 +286,30 @@
             <h1>RECENT BLOG POST</h1>
         </div>
         <div class="card-container-blog">
-            <div class="card-blog">
+            <div class="card-blog-1">
                 <div class="description-blog">
-                    READY TO ENHANCE YOUR CYYBER SECURITY
+                    <!-- READY TO ENHANCE YOUR CYYBER SECURITY -->
                 </div>
                 <div style="background-color: aliceblue;padding:10px">
-                    <button style="padding: 10px; background-color:rgb(181, 61, 71);border-radius:25px">not visible in
-                        photo</button>
+                    <button style="padding: 10px; background-color:rgb(181, 61, 71);border-radius:25px">Read more</button>
                 </div>
             </div>
-            <div class="card-blog">
+            
+            <div class="card-blog-2">
                 <div class="description-blog">
-                    READY TO ENHANCE YOUR CYYBER SECURITY
+                    <!-- READY TO ENHANCE YOUR CYYBER SECURITY -->
                 </div>
                 <div style="background-color: aliceblue;padding:10px">
-                    <button style="padding: 10px; background-color:rgb(181, 61, 71);border-radius:25px">not visible in
-                        photo</button>
+                    <button style="padding: 10px; background-color:rgb(181, 61, 71);border-radius:25px">Read more</button>
                 </div>
             </div>
-            <div class="card-blog">
+            
+            <div class="card-blog-3">
                 <div class="description-blog">
-                    READY TO ENHANCE YOUR CYYBER SECURITY
+                    
                 </div>
                 <div style="background-color: aliceblue;padding:10px">
-                    <button style="padding: 10px; background-color:rgb(181, 61, 71);border-radius:25px">not visible in
-                        photo</button>
+                    <button style="padding: 10px; background-color:rgb(181, 61, 71);border-radius:25px">Read more</button>
                 </div>
             </div>
         </div>
@@ -346,7 +356,7 @@
                       </div>
                     </a>
                     
-                    <a href="https://wa.me/919579181793?text=Hello%20!%20I%20want%20to%20know%20more%20about%20our%20class." target="_blank">
+                    <a href="https://wa.me/919579181793?text=Hello%20!%20I%20want%20to%20know%20more%20about%20our%20Servives." target="_blank">
                       <div class="grid-item">
                           <img src="./images/APP.svg" alt="whatsapp">
                           <h3>whatsapp</h3>
@@ -367,7 +377,7 @@
             <!-- part 2 -->
             <div class="contact-parts">
                 <div class="contact-form-container">
-                    <form class="contact-form">
+                    <div class="contact-form">
                         <h2>Get In Touch</h2>
                         <label for="name">Name:</label>
                         <input type="text" placeholder="Your Name.." id="name" name="name" required>
@@ -375,14 +385,14 @@
                         <label for="email">Email:</label>
                         <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
                         
-                        <label for="subject">Subject:</label>
-                        <input type="text" placeholder="Title" id="subject" name="subject" required>
+                        <label for="phone">phone No.:</label>
+                        <input type="number" placeholder="+91 9579 181793" id="phone" name="phone" required>
                         
                         <label for="message">Message:</label>
                         <textarea id="message" placeholder="Type Here.." name="message" rows="5" required></textarea>
                         
-                        <button type="submit">Send Now</button>
-                    </form>
+                        <button type="submit" onclick="sendMail()">Send Now</button>
+                    </div>
                 </div>
                 
             </div>

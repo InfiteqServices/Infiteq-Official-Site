@@ -703,9 +703,11 @@ nav ul li a:focus {
 
 }
 
-.card-blog {
-    background-image: url(./images/v173_2731.png);
-    background-size: cover;
+.card-blog-1,
+.card-blog-2,
+.card-blog-3 {
+    /* background-image: url(./images/v173_2731.png);
+    background-size: cover; */
     color: aliceblue;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -717,6 +719,25 @@ nav ul li a:focus {
     flex-direction: column;
     justify-content: space-between;
     margin: 20px;
+}
+
+
+.card-blog-1 {
+    background-image: url(./images/Blog-1.jpg);
+    background-size: cover;
+
+}
+
+.card-blog-2 {
+    background-image: url(./images/Blog-2.jpg);
+    background-size: cover;
+
+}
+
+.card-blog-3 {
+    background-image: url(./images/Blog-3.jpg);
+    background-size: cover;
+
 }
 
 .card-blog .description-blog {
@@ -752,7 +773,9 @@ nav ul li a:focus {
         margin-left: 0%;
     }
 
-    .card-blog {
+    .card-blog-1,
+    .card-blog-2,
+    .card-blog-3 {
         width: 80%;
         height: 250px;
         margin-bottom: 20px;
@@ -1582,6 +1605,8 @@ nav ul li a:focus {
     width: 40px;
     font-size: 13px;
 }
+
+
 
     
 
