@@ -15,6 +15,19 @@
 
     
 
+    
+    <!-- Email sending Script -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "GcVAb99m8d1RhWtRZ",
+            });
+        })();
+    </script>
+
  
 
 
@@ -125,22 +138,22 @@
                 <!-- part 2 -->
                 <div class="contact-parts">
                     <div class="contact-form-container">
-                        <form class="contact-form">
-                            <h2>Get In Touch</h2>
-                            <label for="name">Name:</label>
-                            <input type="text" placeholder="Your Name.." id="name" name="name" required>
-                            
-                            <label for="email">Email:</label>
-                            <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
-                            
-                            <label for="subject">Subject:</label>
-                            <input type="text" placeholder="Title" id="subject" name="subject" required>
-                            
-                            <label for="message">Message:</label>
-                            <textarea id="message" placeholder="Type Here.." name="message" rows="5" required></textarea>
-                            
-                            <button type="submit">Send Now</button>
-                        </form>
+                      <div class="contact-form">
+                        <h2>Get In Touch</h2>
+                        <label for="name">Name:</label>
+                        <input type="text" placeholder="Your Name.." id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
+                        
+                        <label for="phone">phone No.:</label>
+                        <input type="number" placeholder="+91 9579 181793" id="phone" name="phone" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" placeholder="Type Here.." name="message" rows="5" required></textarea>
+                        
+                        <button type="submit" onclick="sendMail()">Send Now</button>
+                    </div>
                     </div>
                     
                 </div>
