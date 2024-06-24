@@ -7,7 +7,7 @@
 
 
 
-#preloader {
+/* #preloader {
  
     background: #000 url(images/preloder.gif) no-repeat center center;
     background-size: 30%;
@@ -15,7 +15,7 @@
     width: 100%;
     position: fixed;
     z-index: 100;
-}
+} */
 
 
 
@@ -1716,10 +1716,10 @@ nav ul li a:focus {
 }
 
 
-#preloader {
+/* #preloader {
 
     background-size: 70%;
-}
+} */
 
 
 }
