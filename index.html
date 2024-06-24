@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infiteq </title>
+
+    <link rel="shortcut icon" type="x-icon" href="images/Infiteq.svg">
+
     <!-- Stylesheet Link -->
     <link rel="stylesheet" href="Style.css">
     <!-- jequery and cdnjs links -->
@@ -34,9 +37,19 @@
         })();
     </script>
 
+    
+
+
 
 </head>
 <body>
+
+    <div id="preloader">
+        
+
+    </div>
+
+
     <!-- Home Section -->
     <div class="home">
         <!-- Navbar -->
@@ -491,6 +504,21 @@
 
     <!-- Iconic icon link -->
 
+
+
+    <!-- Script for preloader -->
+
+    <script>
+
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+
+        })
+
+
+    </script>
 
 
 </body>
