@@ -36,7 +36,9 @@ menuLinks.forEach(link => {
 
 const dynamicText = document.querySelector("h1 span");
 
-const words = ["Solutions" , "Consultancy"];
+const words = ["Solutions" , "Consultancy", "Expertise", "Strategies", "Support", "Innovation", "Technologies",
+    "Intelligence", "Growth", "Efficiency", "Transformation", "Sustainability"
+];
 
 let wordIndex = 0;
 let charIndex = 0;
